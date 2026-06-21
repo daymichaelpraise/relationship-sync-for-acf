@@ -1,0 +1,27 @@
+# Files and folders that should NOT ship in the wordpress.org distribution zip.
+# Used by the "WordPress Plugin Deploy" GitHub Action (10up/action-wordpress-plugin-deploy).
+
+# Version control / project meta
+.git
+.github
+.gitignore
+.distignore
+
+# Developer docs not needed on wordpress.org (readme.txt is the canonical one)
+README.md
+CHANGELOG.md
+
+# Archived prior versions — for the GitHub repo only, not the shipped plugin
+history
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea
+.vscode
+
+# Build / dependency artifacts
+node_modules
+vendor
+*.zip

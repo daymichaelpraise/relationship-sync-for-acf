@@ -51,6 +51,12 @@ It reads the post types each field is assigned to from the field's ACF field gro
 
 ACF 6.2+ has a built-in bidirectional option for a single field. This plugin focuses on mapping two *different* fields together from a UI, which the built-in option does not do.
 
+== Screenshots ==
+
+1. The Relationship Sync settings page, listing configured field-pair mappings with their status and per-mapping actions.
+2. Adding a new mapping by choosing two relationship fields from the auto-discovered dropdowns.
+3. A mutual (symmetric) mapping created by selecting the same field on both sides.
+
 == Changelog ==
 
 = 2.1.0 =
