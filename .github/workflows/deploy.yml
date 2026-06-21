@@ -1,0 +1,34 @@
+name: Deploy to WordPress.org
+
+# Publishes a new release to the wordpress.org plugin SVN whenever a version
+# tag is pushed (e.g. `git tag 2.1.0 && git push origin 2.1.0`).
+#
+# The tag name MUST match the "Stable tag" in readme.txt.
+# The .distignore file controls which files are excluded from the shipped zip.
+#
+# Required repository secrets (Settings → Secrets and variables → Actions):
+#   SVN_USERNAME  — your wordpress.org username
+#   SVN_PASSWORD  — your wordpress.org password
+#
+# Plugin assets (banner, icon, screenshot-*.png) live in .wordpress-org/ and
+# are deployed automatically by the action.
+
+on:
+  push:
+    tags:
+      - "*"
+
+jobs:
+  deploy:
+    name: Deploy to wordpress.org
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: WordPress Plugin Deploy
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: relationship-sync-for-acf
