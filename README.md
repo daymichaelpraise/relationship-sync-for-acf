@@ -42,6 +42,8 @@ relationship-sync-for-acf.php   # main plugin file (v2.1.0)
 includes/
   class-rsfa-sync.php           # sync engine
   class-rsfa-admin.php          # settings page
+uninstall.php                   # option cleanup on delete
+languages/                      # translation template (.pot)
 readme.txt                      # wordpress.org readme
 history/                        # prior versions, preserved for reference
   1.1.0/  1.2.0/  2.0.0/
@@ -49,11 +51,13 @@ history/                        # prior versions, preserved for reference
 
 The `history/` folder archives the plugin's evolution from the original site-specific build (NEC Relationship Sync) to the generic, configurable release.
 
-## Known follow-ups before a wordpress.org submission
+## wordpress.org submission readiness
 
-- Text domains are passed via a class constant for brevity; wordpress.org's i18n scanner expects **string literals** — swap `self::TD` for the literal `'relationship-sync-for-acf'` in the translation calls before submitting.
-- Add a `/languages` `.pot` file.
-- Consider an uninstall routine to remove the `rsfa_mappings` / `rsfa_migrated` options.
+- Text domains are passed as **string literals** in every translation call (i18n-scanner compatible).
+- Translation template included at [`languages/relationship-sync-for-acf.pot`](languages/relationship-sync-for-acf.pot); `load_plugin_textdomain()` is wired up on boot.
+- [`uninstall.php`](uninstall.php) removes the `rsfa_mappings` / `rsfa_migrated` options (and legacy keys) on delete; synced relationship values are left intact as real post data.
+
+Remaining nice-to-haves: add screenshots to the readme, and run the official Plugin Check (PCP) plugin before submitting.
 
 ## License
 

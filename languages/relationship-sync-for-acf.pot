@@ -1,0 +1,149 @@
+# Copyright (C) 2026 Praise Day-Michael
+# This file is distributed under the GPL-2.0+ license.
+msgid ""
+msgstr ""
+"Project-Id-Version: Relationship Sync for ACF 2.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/daymichaelpraise/relationship-sync-for-acf/issues\n"
+"POT-Creation-Date: 2026-06-21 12:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: \n"
+"X-Domain: relationship-sync-for-acf\n"
+
+
+#: relationship-sync-for-acf.php:53
+msgid "Relationship Sync for ACF:"
+msgstr ""
+
+#: relationship-sync-for-acf.php:55
+msgid "Advanced Custom Fields (ACF) must be installed and active."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:36 includes/class-rsfa-admin.php:37
+msgid "Relationship Sync"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:59
+msgid "Relationship Sync for ACF"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:61
+msgid "Link any two ACF relationship fields so editing either side keeps both in sync automatically. Pick the same field on both sides to create a mutual (symmetric) relationship."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:66
+msgid "Advanced Custom Fields is not active."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:71
+msgid "No ACF relationship fields were found. Create a relationship field first, then return here."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:75
+msgid "Configured mappings"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:77
+msgid "No mappings yet. Add one below."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:80 includes/class-rsfa-admin.php:115
+msgid "Field A"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:80 includes/class-rsfa-admin.php:116
+msgid "Field B"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:81
+msgid "Status"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:81
+msgid "Actions"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:92
+msgid "(same field — symmetric)"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:95
+msgid "Enabled"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:96
+msgid "Disabled"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:98
+msgid "Disable"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:98
+msgid "Enable"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:99
+msgid "Backfill"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:99
+msgid "Run a one-time backfill for this mapping?"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:100
+msgid "Delete"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:100
+msgid "Delete this mapping? (Existing data is not removed.)"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:108
+msgid "Add a mapping"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:117
+msgid "Choose the same field as A to make it symmetric (mutual relationship)."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:120
+msgid "Add mapping"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:124
+msgid "Tip: each mapping syncs across the post types its fields are assigned to (read from the ACF field group). Use Backfill once after adding a mapping to align existing data."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:130
+msgid "Mapping added."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:133
+msgid "Mapping deleted."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:136
+msgid "Mapping updated."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:141
+msgid "Backfill complete — %d source posts processed."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:153
+msgid "— select a relationship field —"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:170
+msgid "(field not found)"
+msgstr ""
+
+#: includes/class-rsfa-admin.php:195
+msgid "Please choose two valid relationship fields."
+msgstr ""
+
+#: includes/class-rsfa-admin.php:250
+msgid "Mapping not found."
+msgstr ""

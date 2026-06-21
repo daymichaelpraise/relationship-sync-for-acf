@@ -31,6 +31,12 @@ require_once RSFA_PLUGIN_DIR . 'includes/class-rsfa-admin.php';
 add_action( 'init', 'rsfa_boot', 5 );
 
 function rsfa_boot() {
+    load_plugin_textdomain(
+        'relationship-sync-for-acf',
+        false,
+        dirname( plugin_basename( __FILE__ ) ) . '/languages'
+    );
+
     if ( ! function_exists( 'get_field' ) ) {
         add_action( 'admin_notices', 'rsfa_acf_missing_notice' );
         return;
